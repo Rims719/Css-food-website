@@ -1,0 +1,243 @@
+/* css Rest */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    }
+    /* css variables */
+     :root{
+        --navbar-height:59px;
+     } 
+     /* Navigation Bar */
+       .navbar{
+       display: flex;
+       align-items: center;
+       position: relative;
+       top: 0px;
+       }
+      
+     .navbar::before{
+       content: "";
+       background-color: black;
+       position: absolute;
+       height: 100%;
+       width: 100%;
+       z-index: -1;
+       opacity: 0.7;
+     }
+     /* Navigation Bar :logo and image   */
+     .logo{
+       margin: 10px 34px;
+     }
+     .logo img{
+        border-radius: 200px;
+        height: 60px;
+        width: 60px;
+     }
+    
+    .logo imag{
+      height: 56px;
+      margin: 3px 5px;
+      /* border-radius: 150%; */
+    }
+    
+     /* Navigation Bar : List styling */
+     
+     .navbar ul{
+       display: flex;
+    
+     }
+     
+     .navbar ul li {
+       /* color: white; */
+      list-style: none;
+      font-size: 1.2 rem;
+     }
+     .navbar ul li a {
+       color:white;
+      display: block;
+      padding: 3px 22px;
+      border-radius: 20px;
+      text-decoration: none;
+      font-size: 1.2rem;
+     }
+     
+     .navbar ul li a:hover {
+       color: black;
+       background-color: white;
+     }
+     /* home section */
+    .home{
+       display: flex;
+       flex-direction: column;
+        padding: 3px 200px;
+        justify-content: center;
+        align-items: center;
+         height: 578px;
+         /* height: 41px; */
+    }
+    .home::before{
+      
+       content: "";
+      background: url(images\ \(9\).jpg) no-repeat center center/cover;
+         /* background: url(istockphoto-2149659092-612x612.jpg) no-repeat center center/cover; */
+       position: absolute;
+       top: 0px;
+       left: 0px;
+       height: 642px;
+       width: 100%;
+       z-index: -1;
+       opacity: 0.89;
+    }
+    .home h1{
+      /* color: white; */
+      color: black;
+      text-align: center;
+      font-size: 3.5rem;
+    }
+    .home p{
+      /* color: white; */
+      color: black;
+      text-align: center;
+      font-size: 1.3rem;
+      font-family: serif;
+    }
+    /* services section */
+    #services{
+      /* height: 500px; */
+      margin: 34px;
+      display: flex ;
+    }
+    #services .box{
+    border:2px solid black ;
+    padding: 34px;
+    margin: 3px 6px;
+    border-radius: 28px;
+    background-color: skyblue;
+    
+    }
+    #services .box img{
+      height: 160px;
+    display: block;
+    margin: auto;
+    box-shadow: 1.5px;
+    
+      }
+    #services .box p{
+      font-size: 1.3rem;
+      font-family: serif;
+      text-align: center;
+    }
+    
+    
+    /* clients-section */
+    #client-section{
+      height: 500px;
+      position: relative;
+      margin-bottom: 20px;
+    }
+    #client-section::before{
+     content: "";
+     position: absolute;
+     background: url(images\ \(21\).jpg) no-repeat center center/cover;
+     width: 100%;
+     height: 100%;
+     z-index: -1;
+     opacity: 0.3; 
+    }
+    #client{
+      display:flex ;
+      justify-content: center;
+      align-items: center;
+      flex-direction: row;
+    }
+    .client-item{
+    padding: 24px ;
+    }
+    #client img{
+      height: 150px;
+      
+    } 
+    /* contact section */
+    #contact{
+    position: relative;
+    }
+    
+    #contact::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7;
+    background: url(images\ \(22\).jpg)  no-repeat center center/cover;
+    }
+    #contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px ;
+    }
+    #contact-box input, 
+    #contact-box textarea{
+    width: 100%;
+    padding:0.5rem ;
+    border-radius: 9px;
+    font-size: 1.1rem;
+    }
+    
+    
+    
+    footer{
+      background-color: black;
+       color: white;  
+       padding: 9px 20px;
+    }
+    #contact-box form{
+      width: 40%;
+    }
+    #contact-box label{
+      font-size: 1.3rem;
+      font-family: serif;
+    }
+    
+    
+    /* utility classes */
+    .h-primary{
+      font-size: 3.8rem;
+      padding: 80px;
+      text-align: center;
+     }
+    .h-secondary{
+      font-size: 2.3rem;
+      padding: 12px;
+      text-align: center;
+    }
+    .b1{
+    padding: 6px 20px;
+    border: 2px solid rgb(8, 7, 7);
+    background-color: brown;
+    color: white;
+    margin: 17px;
+    border-radius: 10px;
+    cursor: pointer;
+    }
+    /* responsive */
+    @media screen and(min-width:786px){
+    
+      
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+      
+    }
+    
+    
+    
